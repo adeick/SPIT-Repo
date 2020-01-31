@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -309,8 +310,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319853053}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 0
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 12
   m_Range: 3.0446482
@@ -376,11 +378,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 388902117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82527f20a1240384f991d1f7d7d48f67, type: 3}
+  m_Script: {fileID: 11500000, guid: bdaa2f5163c352f4c807478029577732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EndingPosition: {x: 5.5935, y: 3.96, z: -4.2}
-  delay: 8
+  openDelay: 2
+  closeDelay: 6
   speed: 3
 --- !u!1 &522166839
 GameObject:
@@ -442,6 +445,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -521,6 +525,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -574,11 +579,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1685756650}
     m_Modifications:
-    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
-        type: 3}
-      propertyPath: m_Name
-      value: Floor
-      objectReference: {fileID: 0}
     - target: {fileID: 1982300411762840803, guid: b344348459910c34fb733e9f66cae772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -644,6 +644,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
+        type: 3}
+      propertyPath: m_Name
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b344348459910c34fb733e9f66cae772, type: 3}
 --- !u!4 &549267131 stripped
@@ -659,11 +664,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1685756650}
     m_Modifications:
-    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
+    - target: {fileID: 770317859892113082, guid: b344348459910c34fb733e9f66cae772,
         type: 3}
-      propertyPath: m_Name
-      value: Door (1)
-      objectReference: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aeef81193ff83554e8553aa432112ea8, type: 2}
     - target: {fileID: 1982300411762840803, guid: b344348459910c34fb733e9f66cae772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -734,11 +739,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 770317859892113082, guid: b344348459910c34fb733e9f66cae772,
+    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: aeef81193ff83554e8553aa432112ea8, type: 2}
+      propertyPath: m_Name
+      value: Door (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b344348459910c34fb733e9f66cae772, type: 3}
 --- !u!4 &556766476 stripped
@@ -847,8 +852,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -959,6 +965,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1046,8 +1053,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797358941}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 0
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 12
   m_Range: 3.0446482
@@ -1113,11 +1121,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 872839925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82527f20a1240384f991d1f7d7d48f67, type: 3}
+  m_Script: {fileID: 11500000, guid: bdaa2f5163c352f4c807478029577732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EndingPosition: {x: 5.593, y: 3.96, z: -1}
-  delay: 7
+  openDelay: 1
+  closeDelay: 7
   speed: 3
 --- !u!1001 &877528844
 PrefabInstance:
@@ -1201,11 +1210,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1685756650}
     m_Modifications:
-    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 1982300411762840803, guid: b344348459910c34fb733e9f66cae772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1265,6 +1269,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b344348459910c34fb733e9f66cae772, type: 3}
@@ -1425,8 +1434,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.03089295, y: -0.6766392, z: -0.028435664, w: 0.7351166}
-  m_LocalPosition: {x: 13.145653, y: 2.1090941, z: 1.4297373}
+  m_LocalRotation: {x: 0.030942552, y: -0.71170115, z: 0.03141444, w: 0.70109713}
+  m_LocalPosition: {x: 14.925542, y: 4.1747646, z: 1.3423988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1478,6 +1487,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1533,6 +1543,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1274490600}
     m_Modifications:
+    - target: {fileID: 5057186257379592693, guid: 0136fac2ad74fb5429f31dda5da9ffb5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 392c582c444553e47b9c1577a1ef9a02, type: 2}
     - target: {fileID: 5846370709933513437, guid: 0136fac2ad74fb5429f31dda5da9ffb5,
         type: 3}
       propertyPath: m_Name
@@ -1603,11 +1618,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4
       objectReference: {fileID: 0}
-    - target: {fileID: 5057186257379592693, guid: 0136fac2ad74fb5429f31dda5da9ffb5,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 392c582c444553e47b9c1577a1ef9a02, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0136fac2ad74fb5429f31dda5da9ffb5, type: 3}
 --- !u!4 &992621360 stripped
@@ -1623,11 +1633,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1685756650}
     m_Modifications:
-    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 1982300411762840803, guid: b344348459910c34fb733e9f66cae772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1688,6 +1693,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b344348459910c34fb733e9f66cae772, type: 3}
 --- !u!4 &996766688 stripped
@@ -1721,8 +1731,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078455787}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 3
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -1917,6 +1928,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1274490600}
     m_Modifications:
+    - target: {fileID: 5057186257379592693, guid: 0136fac2ad74fb5429f31dda5da9ffb5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 392c582c444553e47b9c1577a1ef9a02, type: 2}
     - target: {fileID: 5846370709933513437, guid: 0136fac2ad74fb5429f31dda5da9ffb5,
         type: 3}
       propertyPath: m_Name
@@ -1987,11 +2003,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4
       objectReference: {fileID: 0}
-    - target: {fileID: 5057186257379592693, guid: 0136fac2ad74fb5429f31dda5da9ffb5,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 392c582c444553e47b9c1577a1ef9a02, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0136fac2ad74fb5429f31dda5da9ffb5, type: 3}
 --- !u!4 &1305947950 stripped
@@ -2264,8 +2275,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669409764}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 0
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 12
   m_Range: 3.0446482
@@ -2437,11 +2449,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1685756650}
     m_Modifications:
-    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 1982300411762840803, guid: b344348459910c34fb733e9f66cae772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2501,6 +2508,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b344348459910c34fb733e9f66cae772, type: 3}
@@ -2592,11 +2604,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1685756650}
     m_Modifications:
-    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 1982300411762840803, guid: b344348459910c34fb733e9f66cae772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2656,6 +2663,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b344348459910c34fb733e9f66cae772, type: 3}
@@ -3038,11 +3050,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1685756650}
     m_Modifications:
-    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
-        type: 3}
-      propertyPath: m_Name
-      value: Ceiling
-      objectReference: {fileID: 0}
     - target: {fileID: 1982300411762840803, guid: b344348459910c34fb733e9f66cae772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3108,6 +3115,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
+        type: 3}
+      propertyPath: m_Name
+      value: Ceiling
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b344348459910c34fb733e9f66cae772, type: 3}
 --- !u!4 &1911108195 stripped
@@ -3123,11 +3135,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 556766476}
     m_Modifications:
-    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
+    - target: {fileID: 770317859892113082, guid: b344348459910c34fb733e9f66cae772,
         type: 3}
-      propertyPath: m_Name
-      value: Door (2)
-      objectReference: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aeef81193ff83554e8553aa432112ea8, type: 2}
     - target: {fileID: 1982300411762840803, guid: b344348459910c34fb733e9f66cae772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3198,11 +3210,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 770317859892113082, guid: b344348459910c34fb733e9f66cae772,
+    - target: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: aeef81193ff83554e8553aa432112ea8, type: 2}
+      propertyPath: m_Name
+      value: Door (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b344348459910c34fb733e9f66cae772, type: 3}
 --- !u!1 &1992442396
@@ -3244,8 +3256,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992442396}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 0
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 12
   m_Range: 3.0446482
