@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 603, y: 221}
   m_MaxSize: {x: 6051, y: 4021}
   vertical: 0
-  controlID: 104
+  controlID: 58
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,13 +338,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\a8dei\OneDrive - Iowa State University\Unity\SPIT-Repo\Transportation-Stress
+  m_LastProjectPath: C:\AndrewUnity2020\SPIT-Repo\Transportation-Stress
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
