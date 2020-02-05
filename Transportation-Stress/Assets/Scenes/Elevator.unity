@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427123, b: 0.5645229, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -950,10 +950,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d449dc49fca6e6d4ca5f4da44ee46cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  josh: {fileID: 872718995}
   joshAnimator: {fileID: 52299461}
   joshWalkDelay: 1.5
+  joshDestroyDelay: 10
+  louise: {fileID: 891220462}
   louiseAnimator: {fileID: 1018255713}
   louiseWalkDelay: 3.5
+  louiseDestroyDelay: 10
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1233,6 +1237,12 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &872718995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 4f5325fdb3fbfa347b91c55de7e68f3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1136029956}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &872839925 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3331946307142605600, guid: b344348459910c34fb733e9f66cae772,
@@ -1484,6 +1494,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7428536978429675141, guid: 0136fac2ad74fb5429f31dda5da9ffb5,
     type: 3}
   m_PrefabInstance: {fileID: 887411040}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &891220462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: fe3b6df004b56634b856dcdb9dc6d678,
+    type: 3}
+  m_PrefabInstance: {fileID: 363824759}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
